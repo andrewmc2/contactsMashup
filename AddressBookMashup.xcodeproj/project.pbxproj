@@ -18,6 +18,9 @@
 		9E04C74F1753EB480010CD55 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E04C74E1753EB480010CD55 /* Default-568h@2x.png */; };
 		9E04C7521753EB480010CD55 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E04C7501753EB480010CD55 /* MainStoryboard.storyboard */; };
 		9E04C7551753EB480010CD55 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E04C7541753EB480010CD55 /* ViewController.m */; };
+		9E04C75D1753F40D0010CD55 /* ViewContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E04C75C1753F40D0010CD55 /* ViewContactViewController.m */; };
+		9E04C7601753F4230010CD55 /* AddContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E04C75F1753F4230010CD55 /* AddContactViewController.m */; };
+		9E04C7631753F73B0010CD55 /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E04C7621753F73B0010CD55 /* Contact.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,12 @@
 		9E04C7511753EB480010CD55 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		9E04C7531753EB480010CD55 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		9E04C7541753EB480010CD55 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9E04C75B1753F40D0010CD55 /* ViewContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewContactViewController.h; sourceTree = "<group>"; };
+		9E04C75C1753F40D0010CD55 /* ViewContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewContactViewController.m; sourceTree = "<group>"; };
+		9E04C75E1753F4230010CD55 /* AddContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddContactViewController.h; sourceTree = "<group>"; };
+		9E04C75F1753F4230010CD55 /* AddContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddContactViewController.m; sourceTree = "<group>"; };
+		9E04C7611753F73B0010CD55 /* Contact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
+		9E04C7621753F73B0010CD55 /* Contact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +95,12 @@
 				9E04C7471753EB480010CD55 /* AppDelegate.h */,
 				9E04C7481753EB480010CD55 /* AppDelegate.m */,
 				9E04C7501753EB480010CD55 /* MainStoryboard.storyboard */,
+				9E04C75E1753F4230010CD55 /* AddContactViewController.h */,
+				9E04C75F1753F4230010CD55 /* AddContactViewController.m */,
+				9E04C7611753F73B0010CD55 /* Contact.h */,
+				9E04C7621753F73B0010CD55 /* Contact.m */,
+				9E04C75B1753F40D0010CD55 /* ViewContactViewController.h */,
+				9E04C75C1753F40D0010CD55 /* ViewContactViewController.m */,
 				9E04C7531753EB480010CD55 /* ViewController.h */,
 				9E04C7541753EB480010CD55 /* ViewController.m */,
 				9E04C73F1753EB480010CD55 /* Supporting Files */,
@@ -176,6 +191,9 @@
 				9E04C7451753EB480010CD55 /* main.m in Sources */,
 				9E04C7491753EB480010CD55 /* AppDelegate.m in Sources */,
 				9E04C7551753EB480010CD55 /* ViewController.m in Sources */,
+				9E04C75D1753F40D0010CD55 /* ViewContactViewController.m in Sources */,
+				9E04C7601753F4230010CD55 /* AddContactViewController.m in Sources */,
+				9E04C7631753F73B0010CD55 /* Contact.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +316,7 @@
 				9E04C75A1753EB480010CD55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

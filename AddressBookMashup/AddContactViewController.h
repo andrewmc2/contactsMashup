@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  AddContactViewController.h
 //  AddressBookMashup
 //
 //  Created by Andrew McCallum14 on 2013-05-27.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface AddContactViewController : UIViewController
 
 @end
