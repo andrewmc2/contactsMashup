@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Contact.h"
 
 @interface ViewContactViewController : UIViewController
+
+@property (strong, nonatomic) Contact *selectedContact;
 
 @end

@@ -10,6 +10,8 @@
 
 @interface ViewContactViewController ()
 
+@property (weak, nonatomic) IBOutlet UIImageView *contactBigImage;
+
 @end
 
 @implementation ViewContactViewController
@@ -27,6 +29,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    self.contactBigImage.image = self.selectedContact.picture;
 }
 
 - (void)didReceiveMemoryWarning
@@ -39,11 +42,12 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSString *identifier = @"cell";
+    NSString *identifier = @"viewCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     if (cell == nil){
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
+    
     cell.textLabel.text = @"andrew";
     return cell;
 }
