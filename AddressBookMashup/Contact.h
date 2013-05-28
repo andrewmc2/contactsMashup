@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreLocation/CoreLocation.h>
 
 @interface Contact : NSObject
 
@@ -15,6 +16,7 @@
 @property (strong, nonatomic) NSString *email;
 @property (strong, nonatomic) NSString *phone;
 @property (strong, nonatomic) NSString *address;
+@property (nonatomic) CLLocationCoordinate2D location;
 @property (strong, nonatomic) NSString *twitter;
 @property (strong, nonatomic) NSString *website;
 @property (strong, nonatomic) UIImage *picture;

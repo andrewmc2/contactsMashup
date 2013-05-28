@@ -24,6 +24,11 @@
 		9E04C7671753FE400010CD55 /* kanye.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E04C7641753FE400010CD55 /* kanye.png */; };
 		9E04C7681753FE400010CD55 /* kim.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E04C7651753FE400010CD55 /* kim.png */; };
 		9E04C7691753FE400010CD55 /* kobe.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E04C7661753FE400010CD55 /* kobe.png */; };
+		9E0563EE17544F0A0036F795 /* CelebHouse.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E0563ED17544F0A0036F795 /* CelebHouse.m */; };
+		9E3B8375175419FE0041B710 /* TwitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E3B8374175419FE0041B710 /* TwitterViewController.m */; };
+		9E3B8378175428EA0041B710 /* MapViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E3B8377175428EA0041B710 /* MapViewViewController.m */; };
+		9E3B837A17542B480041B710 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E3B837917542B480041B710 /* CoreLocation.framework */; };
+		9E3B837C17542B520041B710 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E3B837B17542B520041B710 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +57,14 @@
 		9E04C7641753FE400010CD55 /* kanye.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kanye.png; sourceTree = "<group>"; };
 		9E04C7651753FE400010CD55 /* kim.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kim.png; sourceTree = "<group>"; };
 		9E04C7661753FE400010CD55 /* kobe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kobe.png; sourceTree = "<group>"; };
+		9E0563EC17544F0A0036F795 /* CelebHouse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CelebHouse.h; path = AddressBookMashup/CelebHouse.h; sourceTree = "<group>"; };
+		9E0563ED17544F0A0036F795 /* CelebHouse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CelebHouse.m; path = AddressBookMashup/CelebHouse.m; sourceTree = "<group>"; };
+		9E3B8373175419FE0041B710 /* TwitterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterViewController.h; sourceTree = "<group>"; };
+		9E3B8374175419FE0041B710 /* TwitterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterViewController.m; sourceTree = "<group>"; };
+		9E3B8376175428EA0041B710 /* MapViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewViewController.h; sourceTree = "<group>"; };
+		9E3B8377175428EA0041B710 /* MapViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewViewController.m; sourceTree = "<group>"; };
+		9E3B837917542B480041B710 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		9E3B837B17542B520041B710 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E3B837C17542B520041B710 /* MapKit.framework in Frameworks */,
+				9E3B837A17542B480041B710 /* CoreLocation.framework in Frameworks */,
 				9E04C7391753EB480010CD55 /* UIKit.framework in Frameworks */,
 				9E04C73B1753EB480010CD55 /* Foundation.framework in Frameworks */,
 				9E04C73D1753EB480010CD55 /* CoreGraphics.framework in Frameworks */,
@@ -71,6 +86,10 @@
 		9E04C72C1753EB480010CD55 = {
 			isa = PBXGroup;
 			children = (
+				9E0563EC17544F0A0036F795 /* CelebHouse.h */,
+				9E0563ED17544F0A0036F795 /* CelebHouse.m */,
+				9E3B837B17542B520041B710 /* MapKit.framework */,
+				9E3B837917542B480041B710 /* CoreLocation.framework */,
 				9E04C73E1753EB480010CD55 /* AddressBookMashup */,
 				9E04C7371753EB480010CD55 /* Frameworks */,
 				9E04C7361753EB480010CD55 /* Products */,
@@ -107,6 +126,10 @@
 				9E04C7621753F73B0010CD55 /* Contact.m */,
 				9E04C75B1753F40D0010CD55 /* ViewContactViewController.h */,
 				9E04C75C1753F40D0010CD55 /* ViewContactViewController.m */,
+				9E3B8376175428EA0041B710 /* MapViewViewController.h */,
+				9E3B8377175428EA0041B710 /* MapViewViewController.m */,
+				9E3B8373175419FE0041B710 /* TwitterViewController.h */,
+				9E3B8374175419FE0041B710 /* TwitterViewController.m */,
 				9E04C7531753EB480010CD55 /* ViewController.h */,
 				9E04C7541753EB480010CD55 /* ViewController.m */,
 				9E04C73F1753EB480010CD55 /* Supporting Files */,
@@ -206,6 +229,9 @@
 				9E04C75D1753F40D0010CD55 /* ViewContactViewController.m in Sources */,
 				9E04C7601753F4230010CD55 /* AddContactViewController.m in Sources */,
 				9E04C7631753F73B0010CD55 /* Contact.m in Sources */,
+				9E3B8375175419FE0041B710 /* TwitterViewController.m in Sources */,
+				9E3B8378175428EA0041B710 /* MapViewViewController.m in Sources */,
+				9E0563EE17544F0A0036F795 /* CelebHouse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

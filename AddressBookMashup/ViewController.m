@@ -16,10 +16,10 @@
     NSIndexPath *selectedIndexPath;
 }
 
+
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) NSMutableArray *contactArray;
 @property (strong, nonatomic) Contact *selectedContact;
-
 
 @end
 
@@ -67,6 +67,7 @@
     contact.lastName = @"Kardashian";
     contact.email = @"kim@gmail.com";
     contact.address = @"12900 Mulholland Dr, Beverly Hills, CA 90210";
+    contact.location = CLLocationCoordinate2DMake(34.128416, -118.413384);
     contact.phone = @"310 555 6666";
     contact.twitter = @"KimKardashian";
     contact.picture = [UIImage imageNamed:@"kim.png"];
@@ -78,7 +79,7 @@
     contact.email = @"kanye@gmail.com";
     contact.address = @"516 W Briar Pl, Chicago, IL 60657";
     contact.phone = @"773 555 5555";
-    contact.twitter = @"kanyewet";
+    contact.twitter = @"kanyewest";
     contact.picture = [UIImage imageNamed:@"kanye.png"];
     [self.contactArray addObject:contact];
 }
@@ -113,5 +114,7 @@
 {
     selectedIndexPath = indexPath;
 }
+
+
 
 @end

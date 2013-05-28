@@ -7,9 +7,14 @@
 //
 
 #import "ViewContactViewController.h"
+#import "TwitterViewController.h"
+#import "MapViewViewController.h"
 
 @interface ViewContactViewController ()
-
+{
+    TwitterViewController *twitterViewController;
+    MapViewViewController *mapViewController;
+}
 @property (weak, nonatomic) IBOutlet UIImageView *contactBigImage;
 
 @end
@@ -23,6 +28,21 @@
         // Custom initialization
     }
     return self;
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"viewTwitter"]) {
+        twitterViewController = [segue destinationViewController];
+        [twitterViewController setSelectedContact:self.selectedContact];
+        NSLog(@"viewTwitter");
+    }
+    
+    if ([segue.identifier isEqualToString:@"mapPush"]) {
+        mapViewController = [segue destinationViewController];
+        [mapViewController setSelectedPerson:self.selectedContact];
+        NSLog(@"mapPush");
+    }
 }
 
 - (void)viewDidLoad
@@ -43,12 +63,31 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSString *identifier = @"viewCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
-    if (cell == nil){
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+    UITableViewCell *cell;
+//    UITableViewCell *addressCell = [tableView dequeueReusableCellWithIdentifier:@"mapPush"];
+//    if (cell == nil){
+//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+//    }
+
+    
+    if (indexPath.row == 0) {
+        cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+        cell.textLabel.text = @"name";
+        cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ %@", self.selectedContact.firstName, self.selectedContact.lastName];
+    }
+
+    if (indexPath.row == 1) {
+        cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+        cell.textLabel.text = @"twitter";
+        cell.detailTextLabel.text = self.selectedContact.twitter;
     }
     
-    cell.textLabel.text = @"andrew";
+    if (indexPath.row == 2) {
+        cell = [tableView dequeueReusableCellWithIdentifier:@"mapPush"];
+        cell.textLabel.text = @"address";
+        cell.detailTextLabel.text = self.selectedContact.address;
+    }
+    
     return cell;
 }
 
@@ -59,7 +98,16 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 10;
+    return 3;
 }
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.row == 1) {
+        NSLog(@"twitter");
+    }
+}
+
+
 
 @end
